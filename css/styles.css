@@ -30,7 +30,7 @@ font-family: verdana, helvetica, arial, sans;
 font-size: 105%;
 }
 ul {
-list-style: none;
+list-style: disc;
 margin: 0;
 }
 li {
