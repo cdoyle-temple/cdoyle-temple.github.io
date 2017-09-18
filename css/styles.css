@@ -26,6 +26,8 @@ color: #fff;
 font-size: 13px;
 margin-left: 12px;
 width: 928px;
+font-family: verdana, helvetica, arial, sans;
+font-size: 115%;
 }
 ul {
 list-style: none;
@@ -35,8 +37,11 @@ li {
 float: left;
 position: relative;
 }
-
-#home {
+h1.site-title a {
+	text-decoration: none;
+	color: #951936;
+}
+#wrapper {
 background: #fff;
 margin-top: 20px;
 padding: 0 20px;
