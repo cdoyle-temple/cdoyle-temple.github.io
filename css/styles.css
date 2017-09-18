@@ -37,7 +37,7 @@ li {
 float: left;
 position: relative;
 }
-h1.site-title a {
+h1.site-title a, h1.site-title a:hover, h1.site-title a:visited {
 	text-decoration: none;
 	color: #951936;
 }
@@ -48,7 +48,9 @@ padding: 0 20px;
 margin: 0 auto;
 width: 940px;
 }
-
+#home {
+	float:left;
+}
 .invisible {
 clip: rect(1px, 1px, 1px, 1px);
 overflow: hidden;
