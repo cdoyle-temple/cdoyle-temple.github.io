@@ -43,3 +43,16 @@ padding: 0 20px;
 margin: 0 auto;
 width: 940px;
 }
+
+.invisible {
+clip: rect(1px, 1px, 1px, 1px);
+overflow: hidden;
+position: absolute !important;
+height: 1px;
+width: 1px;
+left: -1000em;
+}
+h2.title {
+margin-top: 14px;
+clear: both;
+}
