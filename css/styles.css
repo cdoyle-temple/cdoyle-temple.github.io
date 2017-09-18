@@ -10,9 +10,7 @@ font-size:110%;
 }
 #access {
 background: #000;
-display: block;
-margin: 0 auto;
-width: 940px;
+width: 100%;
 }
 #access a {
 color: #aaa;
@@ -36,7 +34,7 @@ list-style: none;
 margin: 0;
 }
 li {
-float: left;
+display: inline-block;
 position: relative;
 }
 h1.site-title a, h1.site-title a:hover, h1.site-title a:visited {
