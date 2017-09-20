@@ -51,10 +51,7 @@ h1.site-title a, h1.site-title a:hover, h1.site-title a:visited {
 .intro {
 	margin-top: 28px auto 42px auto;
 }
-.links {
-	width: 75%;
-	margin: auto;
-}
+
 #wrapper {
 background: #fff;
 margin-top: 20px;
@@ -63,7 +60,7 @@ margin: 0 auto;
 width: 940px;
 }
 #home {
-	width: 640px;
+	width: 75%;
 	margin:auto;
 }
 .invisible {
