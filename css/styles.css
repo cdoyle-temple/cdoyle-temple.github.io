@@ -1,5 +1,6 @@
 body {
 background-color: #f1f1f1;
+line-height: 1.35;
 }
 .inline {
 cursor:pointer;
@@ -34,6 +35,9 @@ list-style: disc!important;
 margin: 0;
 }
 li {
+	line-height: 1.5;
+}
+.menu li {
 display: inline-block;
 position: relative;
 line-height: 1.5;
