@@ -1,6 +1,8 @@
 body {
 background-color: #f1f1f1;
 line-height: 1.35;
+font-family: verdana, helvetica, arial, sans
+font-size: 105%;
 }
 .inline {
 cursor:pointer;
