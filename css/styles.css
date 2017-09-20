@@ -30,16 +30,24 @@ font-family: verdana, helvetica, arial, sans;
 font-size: 105%;
 }
 ul {
-list-style: disc;
+list-style: disc!important;
 margin: 0;
 }
 li {
 display: inline-block;
 position: relative;
+line-height: 1.5;
 }
 h1.site-title a, h1.site-title a:hover, h1.site-title a:visited {
 	text-decoration: none;
 	color: #951936;
+}
+.intro {
+	margin-top: 28px auto 42px auto;
+}
+.links {
+	width: 70%;
+	margin: auto;
 }
 #wrapper {
 background: #fff;
