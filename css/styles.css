@@ -54,7 +54,12 @@ h1#site-title a, h1#site-title a:hover, h1#site-title a:visited {
 	margin-top: 28px auto 42px auto;
 	padding-bottom: 21px;
 }
-
+tr.odd {
+	background-color: #f1efe7;
+}
+td {
+	padding: 7px;
+}
 #wrapper {
 background: #fff;
 margin-top: 20px;
