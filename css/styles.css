@@ -9,11 +9,11 @@ cursor:pointer;
 color:#951936;
 text-decoration:none;
 border-bottom:dotted #951936 1px;
-font-size:110%;
 }
 #access {
 background: #000;
 width: 100%;
+margin-bottom: 28px;
 }
 #access a {
 color: #aaa;
@@ -44,12 +44,15 @@ display: inline-block;
 position: relative;
 line-height: 1.5;
 }
-h1.site-title a, h1.site-title a:hover, h1.site-title a:visited {
+
+h1#site-title a, h1#site-title a:hover, h1#site-title a:visited {
+	margin-top: 10px;
 	text-decoration: none;
 	color: #951936;
 }
 .intro {
 	margin-top: 28px auto 42px auto;
+	padding-bottom: 21px;
 }
 
 #wrapper {
@@ -60,7 +63,7 @@ margin: 0 auto;
 width: 940px;
 }
 #home {
-	width: 75%;
+	width: 77%;
 	margin:auto;
 }
 .invisible {
@@ -71,7 +74,6 @@ height: 1px;
 width: 1px;
 left: -1000em;
 }
-h2.title {
-margin-top: 14px;
-clear: both;
+h2 {
+	color: #951936;
 }
