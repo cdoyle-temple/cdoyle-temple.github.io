@@ -75,17 +75,21 @@
                 // data comes through as a simple array since simpleSheet is turned on
                 var charInit = "Z";
                 var firstLetter;
+                var anchor;
 
                 for (let value of data) {
                   firstLetter = value['title'].charAt(0);
                   if (firstLetter != charInit) {
-                    document.getElementById("dbs").innerHTML += '<a name="' + firstLetter + 'link"></a>';
+                    anchor = firstLetter + 'link';
                     charInit = firstLetter;
+                    document.getElementById("dbs").innerHTML += '<div id="'+anchor+'" class="entry">';
                   }
-                  document.getElementById("dbs").innerHTML += '<div class="entry">';
-                  document.getElementById("dbs").innerHTML += '<p><a href="http://libproxy.temple.edu/login?url=' + value['url'] + '">' + value['title'] + '</a></p>';
-                  document.getElementById("dbs").innerHTML += '<div class="accessnote">' + value['accessnote'] +'</div>';
-                  document.getElementById("dbs").innerHTML += '<div class="borderBottom"></div>';
+                  else {
+                    document.getElementById("dbs").innerHTML += '<div class="entry">';
+                  }
+                  document.getElementById("dbs").innerHTML += '  <p><a href="http://libproxy.temple.edu/login?url=' + value['url'] + '">' + value['title'] + '</a></p>';
+                  document.getElementById("dbs").innerHTML += '  <div class="accessnote">' + value['accessnote'] +'</div>';
+                  document.getElementById("dbs").innerHTML += '  <div class="borderBottom"></div>';
                   document.getElementById("dbs").innerHTML += '</div>';
 
                   // console.log(value);
