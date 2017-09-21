@@ -82,3 +82,37 @@ left: -1000em;
 h2 {
 	color: #951936;
 }
+#jump {
+	color:#b7b29c;
+	margin-bottom:35px;
+	text-align:center;
+	border-bottom:solid #e6e3d7 1px;
+	font-size:smaller;
+	padding:4px;
+}
+#jump a {
+	color:black;font-family: verdana, helvetica, arial, sans;
+}
+#dbs a {
+	color: #951936;
+}
+.entry {
+	margin-bottom:14px;
+}
+.entry a {
+	color: #951936;
+}
+.borderBottom {
+	width:95%;
+	margin: 7px 2.5%;
+	border-bottom:solid #ccc 1px;
+	background-color:transparent;
+	padding:4px;
+}
+.spacer {
+	height: 42px;
+}
+.accessnote {
+	font-family:verdana, helvetica, arial, sans;
+	font-size:smaller;
+}

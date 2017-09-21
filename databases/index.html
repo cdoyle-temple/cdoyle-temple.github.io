@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>Temple University Library Alternate Access</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script type="text/javascript" src="../js/tabletop.js"></script>
+  
+</head>
+<body>
+  <div id="wrapper">
+    <h1 id="site-title">
+      <a href="/" title="TU Library Alternate Access" rel="home">TU Library Alternate Access</a>
+    </h1>
+    <div id="access" role="navigation">
+      <div class="invisible"><a href="#content" title="Skip to content">Skip to content</a></div>
+        <div class="menu">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/directory">Directory</a></li>
+            <li><a href="/databases">All Databases A-Z</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <div id="home">
+
+      <div class="links">
+        <div id="post-38" class="post-38 page type-page status-publish hentry">
+                      <h1 class="entry-title">All Databases A-Z</h1>
+          
+          <div class="entry-content">
+            <div id="jump" style="">
+              <a href="#Alink">A</a> | 
+              <a href="#Blink">B</a> | 
+              <a href="#Clink">C</a> | 
+              <a href="#Dlink">D</a> | 
+              <a href="#Elink">E</a> | 
+              <a href="#Flink">F</a> | 
+              <a href="#Glink">G</a> | 
+              <a href="#Hlink">H</a> | 
+              <a href="#Ilink">I</a> | 
+              <a href="#Jlink">J</a> | 
+              <a href="#Klink">K</a> | 
+              <a href="#Llink">L</a> | 
+              <a href="#Mlink">M</a> | 
+              <a href="#Nlink">N</a> | 
+              <a href="#Olink">O</a> | 
+              <a href="#Plink">P</a> | 
+              <a href="#Qlink">Q</a> | 
+              <a href="#Rlink">R</a> | 
+              <a href="#Slink">S</a> | 
+              <a href="#Tlink">T</a> | 
+              <a href="#Ulink">U</a> | 
+              <a href="#Vlink">V</a> | 
+              <a href="#Wlink">W</a> | 
+              <a href="#Xlink">X</a> | 
+              <a href="#Ylink">Y</a> | 
+              <a href="#Zlink">Z</a>
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div id="dbs"></div>
+
+            <script>
+              function init() {
+                Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1dt0LUnNXqfHLLwj7oocUC_LleLeHauO2KamwZZt9NoQ/edit?usp=sharing',
+                                 callback: showInfo,
+                                 orderby: "title",
+                                 simpleSheet: true } )
+              }
+
+              window.addEventListener('DOMContentLoaded', init)
+
+              function showInfo(data) {
+                // data comes through as a simple array since simpleSheet is turned on
+                var charInit = "Z";
+                var firstLetter;
+
+                for (let value of data) {
+                  firstLetter = value['title'].charAt(0);
+                  if (firstLetter != charInit) {
+                    document.getElementById("dbs").innerHTML += '<a name="' + firstLetter + 'link"></a>';
+                    charInit = firstLetter;
+                  }
+                  document.getElementById("dbs").innerHTML += '<div class="entry">';
+                  document.getElementById("dbs").innerHTML += '<p><a href="http://libproxy.temple.edu/login?url=' + value['url'] + '">' + value['title'] + '</a></p>';
+                  document.getElementById("dbs").innerHTML += '<div class="accessnote">' + value['accessnote'] +'</div>';
+                  document.getElementById("dbs").innerHTML += '<div class="borderBottom"></div>';
+                  document.getElementById("dbs").innerHTML += '</div>';
+
+                  // console.log(value);
+                }
+              }
+            </script>
+
+            <div class="spacer"></div>
+         </div><!-- .entry-content -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
