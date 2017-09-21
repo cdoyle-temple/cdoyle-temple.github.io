@@ -4,11 +4,26 @@ line-height: 1.35;
 font-family: verdana, helvetica, arial, sans;
 font-size: 100%;
 }
-.inline {
-cursor:pointer;
-color:#951936;
-text-decoration:none;
-border-bottom:dotted #951936 1px;
+h1#site-title a, h1#site-title a:hover, h1#site-title a:visited {
+	margin-top: 10px;
+	text-decoration: none;
+	color: #951936;
+}
+h2 {
+	color: #951936;
+}
+tr.odd {
+	background-color: #f1efe7;
+}
+td {
+	padding: 7px;
+}
+ul {
+list-style: disc!important;
+margin: 0;
+}
+li {
+	line-height: 1.5;
 }
 #access {
 background: #000;
@@ -32,33 +47,10 @@ width: 928px;
 font-family: verdana, helvetica, arial, sans;
 font-size: 105%;
 }
-ul {
-list-style: disc!important;
-margin: 0;
-}
-li {
-	line-height: 1.5;
-}
 .menu li {
 display: inline-block;
 position: relative;
 line-height: 1.5;
-}
-
-h1#site-title a, h1#site-title a:hover, h1#site-title a:visited {
-	margin-top: 10px;
-	text-decoration: none;
-	color: #951936;
-}
-.intro {
-	margin-top: 28px auto 42px auto;
-	padding-bottom: 21px;
-}
-tr.odd {
-	background-color: #f1efe7;
-}
-td {
-	padding: 7px;
 }
 #wrapper {
 background: #fff;
@@ -71,17 +63,11 @@ width: 940px;
 	width: 77%;
 	margin:auto;
 }
-.invisible {
-clip: rect(1px, 1px, 1px, 1px);
-overflow: hidden;
-position: absolute !important;
-height: 1px;
-width: 1px;
-left: -1000em;
+.intro {
+	margin-top: 28px auto 42px auto;
+	padding-bottom: 21px;
 }
-h2 {
-	color: #951936;
-}
+/* DATABASES PAGE */
 #jump {
 	color:#b7b29c;
 	margin-bottom:35px;
@@ -115,4 +101,21 @@ h2 {
 .accessnote {
 	font-family:verdana, helvetica, arial, sans;
 	font-size:smaller;
+}
+
+/* MISC */
+.inline {
+cursor:pointer;
+color:#951936;
+text-decoration:none;
+border-bottom:dotted #951936 1px;
+}
+
+.invisible {
+clip: rect(1px, 1px, 1px, 1px);
+overflow: hidden;
+position: absolute !important;
+height: 1px;
+width: 1px;
+left: -1000em;
 }
